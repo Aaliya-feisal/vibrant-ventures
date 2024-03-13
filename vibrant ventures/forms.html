@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibrant Ventures -About Us</title>
+  <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" id="logo">Vibrant<span>Ventures</span></a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="services.html">About Us</a></li>
+        <li><a href="forms.html">Services</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to Vibrant Ventures</h2>
+      <p>Allow us to be your trusted guide as you uncover the extraordinary and embrace the remarkable.</p>
+    </div>
+  </section>
+
+  <section class="booking-form">
+    <div class="container">
+      <h2>Book Your Adventure</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <label for="service">Choose a Service:</label>
+        <select id="service" required>
+          <option value="">Select an option</option>
+          <option value="adventure">Adventure Tour</option>
+          <option value="nature">Nature Tour</option>
+          <option value="culture">Cultural Experience</option>
+          <option value="wildlife">Wildlife Safaris</option>
+          <option value="culture">Cultural Immersion</option>
+          
+        </select>
+        
+        <label for="hotel">Select a Hotel:</label>
+        <select id="hotel" required>
+          <option value="">Select an option</option>
+          <option value="hotel1">Hotel 1</option>
+          <option value="hotel2">Hotel 2</option>
+          <option value="hotel3">Hotel 3</option>
+        </select>
+        
+        <label for="travel">Travel Options:</label>
+        <input type="radio" id="travel" name="travel" value="flight" required>
+        <label for="flight">Flight</label>
+        <input type="radio" id="travel" name="travel" value="train">
+        <label for="train">Train</label>
+        
+        <input type="submit" value="Book Now">
+        
+      </form>
+    </div>
+  </section>
+
+  <section class="confirmation">
+    <div class="container">
+      <h2>Booking Confirmed</h2>
+      <p>Thank you for choosing Vibrant Ventures! Your booking has been confirmed.</p>
+      <p>We will be in touch with you via email within the next 48 hours to provide further details.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Vibrant Ventures. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
