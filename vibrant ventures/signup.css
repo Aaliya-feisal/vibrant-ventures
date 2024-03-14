@@ -68,6 +68,12 @@ font-size: 1rem;
   text-align: right;
 
 }
+.navbar ul li a.active {
+  color: var(--secondclr); /* A contrasting color for the active link */
+  font-weight: bold; /* Make the active link bold */
+  border-bottom: 2px solid var(--secondclr); /* Underline the active link */
+}
+
 .navbar a:hover{
   color: black;
 }

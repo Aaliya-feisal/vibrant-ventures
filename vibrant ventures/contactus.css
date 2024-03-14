@@ -1,3 +1,10 @@
+:root{
+  --maincolor: #08bc17;
+  --secondclr: #2b58ea;
+  --thirdcolor: #Ff6600;
+
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -79,6 +86,11 @@ body {
     flex: 100;
     text-align: right;
 
+}
+.navbar ul li a.active {
+  color: var(--secondclr); /* A contrasting color for the active link */
+  font-weight: bold; /* Make the active link bold */
+  border-bottom: 2px solid var(--secondclr); /* Underline the active link */
 }
 .navbar a:hover{
     color: black;

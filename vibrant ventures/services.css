@@ -1,3 +1,11 @@
+:root{
+  --maincolor: #08bc17;
+  --secondclr: #2b58ea;
+  --thirdcolor: #Ff6600;
+
+}
+
+
 /* Reset default styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
@@ -88,6 +96,11 @@ body, h1, h2, h3, p, ul, li {
     flex: 100;
     text-align: right;
 
+}
+.navbar ul li a.active {
+  color: var(--secondclr); /* A contrasting color for the active link */
+  font-weight: bold; /* Make the active link bold */
+  border-bottom: 2px solid var(--secondclr); /* Underline the active link */
 }
 .navbar a:hover{
     color: black;
@@ -209,10 +222,6 @@ body, h1, h2, h3, p, ul, li {
   
   
  
-  
-  /* .header .icons {
-    display: none;
-  } */
   
   @media only screen and (max-width: 768px) {
     .header {
