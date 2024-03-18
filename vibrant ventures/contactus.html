@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Vibrant Ventures</title>
   <link rel="stylesheet" type="text/css" href="contactus.css">
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-  <!-- <header>
-    <nav>
-      <ul>
-        <li><a href="homepage.html">Home</a></li>
-        <li><a href="services.html">About Us</a></li>
-        <li><a href="forms.html">Services</a></li>
-        <li><a href="contact.html" class="active">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header> -->
+  <!-- Header -->
   <header class="header">
     <a href="#" id="logo">Vibrant<span>Ventures</span></a>
     <nav class="navbar">
@@ -28,19 +22,23 @@
     </nav>
   </header>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
-      <form>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Message"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </section>
-  
+  <!-- Main Content -->
+  <main>
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
+        <form action="submit-form.php" method="POST">
+          <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+          <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+          <textarea id="message" name="message" placeholder="Your message" required></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2024 Vibrant Ventures. All rights reserved.</p>
   </footer>

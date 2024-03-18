@@ -108,11 +108,14 @@ font-size: 1rem;
 .form-container h2 {
     color: var(--thirdcolor); /* Use the color scheme from your site */
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .form-container input[type="text"],
 .form-container input[type="email"],
-.form-container input[type="password"] {
+.form-container input[type="password"],
+.form-container textarea {
+    font-family: inherit;
     font-size: 1rem;
     padding: 10px;
     margin-bottom: 1rem;
@@ -121,8 +124,9 @@ font-size: 1rem;
 }
 
 .form-container button[type="submit"] {
-    font-size: 1rem;
-    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 12px 20px;
     background-color: var(--maincolor); /* Use vibrant color for the button */
     color: #fff;
     border: none;
@@ -133,6 +137,14 @@ font-size: 1rem;
 .form-container button[type="submit"]:hover {
     background-color: var(--secondclr); /* Darker shade on hover */
 }
+
+/* Make text areas dynamically expandable */
+.form-container textarea {
+    resize: vertical;
+    min-height: 50px; /* Minimum height of the text area */
+    max-height: 200px; /* Maximum height of the text area */
+}
+
 .account-link {
   margin-top: 1rem; /* Adjust spacing to fit your design */
   font-size: 0.9rem; /* Slightly smaller font size */

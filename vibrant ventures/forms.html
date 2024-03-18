@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vibrant Ventures -About Us</title>
   <link rel="stylesheet" href="forms.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 <body>
   <header class="header">
@@ -20,7 +21,6 @@
     </nav>
   </header>
 
-
   <section class="hero">
     <div class="container">
       <h2>Welcome to Vibrant Ventures</h2>
@@ -31,14 +31,36 @@
   <section class="booking-form">
     <div class="container">
       <h2>Book Your Adventure</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" required>
+      <form  id="travel-form" action="travel.php" method = "post">
+        <label for="departure-date">Departure Date:</label>
+        <input type="text" id="departure-date" name="departure-date" required>
+        <label for="return-date">Return Date:</label>
+        <input type="text" id="return-date" name="return-date" required>
         
-        <label for="email">Email:</label>
-        <input type="email" id="email" required>
+        <label for="flight-type">Flight Type:</label>
+        <select id="flight-type" name="flight-type" required>
+          <option value="">Select an option</option>
+          <option value="first-business">First/Business Class</option>
+          <option value="economy">Economy Class</option>
+        </select>
+
+        <label for="hotel">Select Hotel:</label>
+        <select id="hotel" required>
+          <option value="">Select an option</option>
+          <option value="hotel1">Hotel 1 ( &#9733 &#9733 &#9733 &#9733 &#9733 )</option>
+          <option value="hotel2">Hotel 2 ( &#9733 &#9733 &#9733 &#9734 &#9734 )</option>
+          <option value="hotel3">Hotel 3 ( &#9733 &#9733 &#9733 &#9733 &#9734 )</option>
+        </select>
         
-        <label for="service">Choose a Service:</label>
+        <label for="travel">Travel Options:</label>
+        <select id="travel">
+          <option value="">Select an option</option>
+          <option value="car">Car Rental</option>
+          <option value="bike">Bike Rental</option>
+          <option value="bus">Bus Pass</option>
+        </select>
+
+        <label for="service">Choose Service:</label>
         <select id="service" required>
           <option value="">Select an option</option>
           <option value="adventure">Adventure Tour</option>
@@ -46,34 +68,13 @@
           <option value="culture">Cultural Experience</option>
           <option value="wildlife">Wildlife Safaris</option>
           <option value="culture">Cultural Immersion</option>
-          
         </select>
-        
-        <label for="hotel">Select a Hotel:</label>
-        <select id="hotel" required>
-          <option value="">Select an option</option>
-          <option value="hotel1">Hotel 1</option>
-          <option value="hotel2">Hotel 2</option>
-          <option value="hotel3">Hotel 3</option>
-        </select>
-        
-        <label for="travel">Travel Options:</label>
-        <input type="radio" id="travel" name="travel" value="flight" required>
-        <label for="flight">Flight</label>
-        <input type="radio" id="travel" name="travel" value="train">
-        <label for="train">Train</label>
-        
-        <input type="submit" value="Book Now">
-        
-      </form>
-    </div>
-  </section>
 
-  <section class="confirmation">
-    <div class="container">
-      <h2>Booking Confirmed</h2>
-      <p>Thank you for choosing Vibrant Ventures! Your booking has been confirmed.</p>
-      <p>We will be in touch with you via email within the next 48 hours to provide further details.</p>
+        <label for="special-requests">Special Requests:</label>
+        <textarea id="special-requests" name="special-requests" rows="4" cols="50" placeholder="Enter any special requests here..."></textarea>
+
+        <input type="submit" value="Book Now">
+      </form>
     </div>
   </section>
 
@@ -82,5 +83,9 @@
       <p>&copy; 2024 Vibrant Ventures. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="forms.js"></script>
 </body>
 </html>
