@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     const signupForm = document.getElementById("signup-form");
 
@@ -28,9 +27,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function validateName(name){
         // Check for number or special characters
-        const regEx = /[0-9!@#$%^&*()_+={}\[\]|\\:;"'<>.,?/~`]/;
+        const regEx = /[0-9!@#$%^&*()_+={}[\]|\\:;"'<>.,?/~`]/;
         return !regEx.test(name)
     }
+    
     function validateEmail(email) {
         // Validate email input
         const regEx = /\S+@\S+\.\S+/;

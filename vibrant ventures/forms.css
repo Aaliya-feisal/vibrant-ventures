@@ -17,56 +17,54 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
-.header{
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: auto;
-  /*padding: 2rem 7%;*/
-  /* top: 0; */
-  /* left: 0; */
-  /* right: 0; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 100000;
   background-color: white;
   padding: 25px;
-  
-
 }
-.header #logo{
+
+.header #logo {
   color:black;
   font-size: 2rem;
   text-decoration: none;
-
-
 }
-.header #logo span{
+
+.header #logo span {
   color: #FF6600;
 }
 
-.navbar ul{
-list-style-type: none;
-margin: 0%;
-padding: 0%;
+.navbar ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
 }
-.navbar ul li{
-display: inline-block;
-margin-right: 10px;
+
+.navbar ul li {
+  display: inline-block;
+  margin-right: 10px;
 }
-.navbar ul li a{
-text-decoration: none;
-padding: 5px 10px;
-font-size: 1rem;
+
+.navbar ul li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 1rem;
   /* margin-left: 2rem; */
   /* padding: 1.2rem; */
   color: #FF6600;
   flex: 100;
   text-align: right;
-
 }
-.navbar a:hover{
+
+.navbar a:hover {
   color: black;
 }
+
 /* Header */
 /* header {
   background: #f58025;
@@ -105,14 +103,11 @@ header nav ul li a {
   text-align: center;
   margin-bottom: 20px;
   color:#ff6600;
- 
-  
 }
 
 .hero p {
   margin-bottom: 10px;
   border-left: #f58025 3px solid;
-  
 }
 
 /* Booking form */
@@ -185,17 +180,13 @@ footer {
     align-items: space-around;
     padding: 5px;
   }
-
   .header #logo {
     margin-bottom: 10px;
   }
-
   .header nav.navbar {
     display: block;
     margin-top: 10px;
   }
-
-
   .header .navbar a {
     display: block;
     margin-bottom: 5px;

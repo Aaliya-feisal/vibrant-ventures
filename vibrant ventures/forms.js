@@ -31,8 +31,8 @@ $(function() {
         }
 
         // If validations pass, submit the form
-        if(confirm("Booking Confirmed\n\nThank you for choosing Vibrant Ventures! Your booking has been confirmed.\n\nWe will be in touch with you via email within the next 48 hours to provide further details.")) {}
+        if(confirm("Booking Confirmed\n\nThank you for choosing Vibrant Ventures! Your booking has been confirmed.\n\nWe will be in touch with you via email within the next 48 hours to provide further details.")){
             bookingForm.submit();
         }
-    );
+    });
 });

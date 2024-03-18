@@ -1,16 +1,15 @@
-:root{
+:root {
   --maincolor: #08bc17;
   --secondclr: #2b58ea;
   --thirdcolor: #Ff6600;
-
 }
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  }
+}
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,36 +19,36 @@ body {
   padding: 25px;
 }
 
-.header #logo{
+.header #logo {
   color:black;
   font-size: 2rem;
   text-decoration: none;
 }
 
-.header #logo span{
-    color: #FF6600;
+.header #logo span {
+  color: #FF6600;
 }
 
-.navbar ul{
+.navbar ul {
   list-style-type: none;
   margin: 0%;
   padding: 0%;
 }
 
-.navbar ul li{
+.navbar ul li {
   display: inline-block;
   margin-right: 10px;
 }
 
-.navbar ul li a{
+.navbar ul li a {
   text-decoration: none;
   padding: 5px 10px;
   font-size: 1rem;
     /* margin-left: 2rem; */
     /* padding: 1.2rem; */
-    color: #FF6600;
-    flex: 100;
-    text-align: right;
+  color: #FF6600;
+  flex: 100;
+  text-align: right;
 }
 
 .navbar ul li a.active {
@@ -58,8 +57,8 @@ body {
   border-bottom: 2px solid var(--secondclr); /* Underline the active link */
 }
 
-.navbar a:hover{
-    color: black;
+.navbar a:hover {
+  color: black;
 }
 
 section#contact {
@@ -75,7 +74,6 @@ section#contact {
 .container {
   max-width: 600px;
   margin: 0 auto;
-  
 }
 
 h2 {
@@ -106,50 +104,47 @@ form textarea::placeholder {
   font-size: 16px;
 }
   
-  form textarea {
-    height: 150px;
-    border: 4px solid rgb(216, 189, 154);
+form textarea {
+  height: 150px;
+  border: 4px solid rgb(216, 189, 154);
+}
+  
+form input[type="submit"] {
+  background-color: var(--third-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+  
+form input[type="submit"]:hover {
+  background-color: #ff9933;
+}
+  
+footer {
+  background: #f58025;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+  
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: space-around;
+    padding: 5px;
   }
-  
-  form input[type="submit"] {
-    background-color: var(--third-color);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  .header #logo {
+    margin-bottom: 10px;
   }
-  
-  form input[type="submit"]:hover {
-    background-color: #ff9933;
+  .header nav.navbar {
+    display: block;
+    margin-top: 10px;
   }
-  
-  footer {
-    background: #f58025;
-    padding: 10px;
-    color: #fff;
-    text-align: center;
+  .header .navbar a {
+    display: block;
+    margin-bottom: 5px;
   }
-  
-  @media only screen and (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      align-items: space-around;
-      padding: 5px;
-    }
-  
-    .header #logo {
-      margin-bottom: 10px;
-    }
-  
-    .header nav.navbar {
-      display: block;
-      margin-top: 10px;
-    }
-  
-    .header .navbar a {
-      display: block;
-      margin-bottom: 5px;
-    }
-  }
+}
